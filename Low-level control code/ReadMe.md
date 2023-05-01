@@ -8,7 +8,7 @@ This library is used for the communication between PC and multiple motor control
 ## /lib
 Including the library files of Linux. Please modify the CMakeList manually to select the correst `.so` file.
 ## /include
-Including the header files. ActuationSystem header file is the top-level class encapsulating the library developed for interaction with an actuation system of developed humanoid. 
+Including the header files. ActuationSystem header file is the top-level class encapsulating the library developed for interaction with an actuation system of developed humanoid. 4 functions are needed to use it: constructor, read_actual_positions(), send_desired_positions() and update_torque().
 ## /src
 Including the source files of example, changeID tool, code used for motor testing. The example code can control motors to run under desired command for desired time, and then stop. The main control file is motor_control.cpp which allows for testing the developed ActuationSystem class.
 ## /build

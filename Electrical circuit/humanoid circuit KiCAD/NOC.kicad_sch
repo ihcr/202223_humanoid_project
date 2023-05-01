@@ -1,0 +1,19 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 0470b885-c815-4618-8847-6a737dad8d7e)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "USB" (shape input) (at 134.62 34.29 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 80fad007-e521-44d2-9ca7-5eef89f56a31)
+  )
+  (hierarchical_label "PWR" (shape input) (at 134.62 40.64 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9c7cd592-16d2-4e7b-9568-9d2c85455f79)
+  )
+)

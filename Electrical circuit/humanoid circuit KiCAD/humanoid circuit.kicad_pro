@@ -1,0 +1,462 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "other_line_width": 0.15,
+        "silk_line_width": 0.15,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {
+        "min_copper_edge_clearance": 0.0,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0
+      },
+      "track_widths": [],
+      "via_dimensions": []
+    },
+    "layer_presets": []
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "rule_severities": {
+      "bus_definition_conflict": "error",
+      "bus_entry_needed": "error",
+      "bus_label_syntax": "error",
+      "bus_to_bus_conflict": "error",
+      "bus_to_net_conflict": "error",
+      "different_unit_footprint": "error",
+      "different_unit_net": "error",
+      "duplicate_reference": "error",
+      "duplicate_sheet_names": "error",
+      "extra_units": "error",
+      "global_label_dangling": "warning",
+      "hier_label_mismatch": "error",
+      "label_dangling": "error",
+      "lib_symbol_issues": "warning",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
+      "pin_not_connected": "error",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
+      "power_pin_not_driven": "error",
+      "similar_labels": "warning",
+      "unannotated": "error",
+      "unit_value_mismatch": "error",
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "humanoid circuit.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12.0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      }
+    ],
+    "meta": {
+      "version": 2
+    },
+    "net_colors": null
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "drawing": {
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "field_names": [],
+      "intersheets_ref_own_page": false,
+      "intersheets_ref_prefix": "",
+      "intersheets_ref_short": false,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
+      "label_size_ratio": 0.375,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    },
+    "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "fix_passive_vals": false,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
+    "page_layout_descr_file": "",
+    "plot_directory": "",
+    "spice_adjust_passive_values": false,
+    "spice_external_command": "spice \"%I\"",
+    "subpart_first_id": 65,
+    "subpart_id_separator": 0
+  },
+  "sheets": [
+    [
+      "876b0bfd-9985-4a27-84ac-fe19e2fa625c",
+      ""
+    ],
+    [
+      "dfec03ba-7d55-45a9-9d20-0decf993bfc1",
+      "Intel NUC"
+    ],
+    [
+      "6526966d-a152-46ba-aa0c-39f049799f32",
+      "USB hub"
+    ],
+    [
+      "a1f979e1-e08a-4841-a357-7698b99e364f",
+      "A1 motor1"
+    ],
+    [
+      "ed060762-6511-4008-90f1-55196b2e0ef9",
+      "A1 motor2"
+    ],
+    [
+      "36068465-64a3-4648-9d2d-83b28d8583f6",
+      "A1 motor3"
+    ],
+    [
+      "1d297545-5680-47ba-8ba0-5b25426d6052",
+      "A1 motor4"
+    ],
+    [
+      "d3af2081-00fb-4550-9c99-13d908038b5a",
+      "A1 motor5"
+    ],
+    [
+      "0d29e2f0-28f3-469f-a893-17750d51a93a",
+      "A1 motor6"
+    ],
+    [
+      "44a079fb-8641-42ad-92ca-facb269736f6",
+      "USB to RS485 converter2"
+    ],
+    [
+      "713701c4-79f6-4941-9000-929cc4d73f7d",
+      "A1 motor7"
+    ],
+    [
+      "bf164fbb-2b97-4597-a6b6-42692113d5e0",
+      "A1 motor8"
+    ],
+    [
+      "b7be5e90-4d5e-4bbd-b7b9-6ddf4e04b879",
+      "A1 motor9"
+    ],
+    [
+      "5cb6dbe6-d526-44d8-b5d7-86d4d811f174",
+      "USB to RS485 converter3"
+    ],
+    [
+      "6ae7e92f-78c8-4cfb-b066-e17aa85d044c",
+      "A1 motor10"
+    ],
+    [
+      "217aa332-91ae-4ccd-b231-0d5fa970e1a2",
+      "USB to RS485 converter1"
+    ],
+    [
+      "bd44bed0-7e6d-4ace-bba5-d099ca33bc48",
+      "A1 motor11"
+    ],
+    [
+      "f946285d-0151-4cf8-a191-c7b4c1c62a87",
+      "A1 motor12"
+    ],
+    [
+      "6fd5f3e5-02ff-401e-b80f-52bf91723c6e",
+      "USB to RS485 converter4"
+    ],
+    [
+      "0722f0c9-e1e2-4a3c-b10e-917e957bde0d",
+      "A1 motor13"
+    ],
+    [
+      "0aa85bc2-c3ee-4f0f-84ce-2082b2a616a7",
+      "USB to RS485 converter5"
+    ],
+    [
+      "7f3c4c89-db14-4d1b-9a81-0ed33af5e418",
+      "A1 motor14"
+    ],
+    [
+      "2a65060e-2538-4906-a4ae-d945356362ce",
+      "A1 motor15"
+    ],
+    [
+      "f276a6a2-23ed-435c-9d3d-444429a515ad",
+      "A1 motor16"
+    ],
+    [
+      "10e45515-4e05-4a9e-afb0-81d717f805c2",
+      "A1 motor17"
+    ],
+    [
+      "de746fbc-e6be-4f2c-94bc-1a416d2ed273",
+      "A1 motor18"
+    ],
+    [
+      "644d4d22-18af-460d-9d1f-788d939aee41",
+      "USB to RS485 converter7"
+    ],
+    [
+      "5732d6c9-54ad-4533-b09e-4659bbef57eb",
+      "A1 motor19"
+    ],
+    [
+      "755f5c34-08e7-42fe-bd3d-e67c1fbb5809",
+      "A1 motor20"
+    ],
+    [
+      "d025e407-e968-4b87-b338-e6462f467926",
+      "A1 motor21"
+    ],
+    [
+      "6cb15b13-1652-411c-8588-8792e926be2e",
+      "USB to RS485 converter8"
+    ],
+    [
+      "1eb043e5-1573-4a19-a532-9a373ee7c03e",
+      "A1 motor22"
+    ],
+    [
+      "8fd88d1d-fc63-44d4-8b0f-273e6980fe00",
+      "USB to RS485 converter6"
+    ],
+    [
+      "c8cb7273-d5fe-4a80-a466-34c3a8cd7a89",
+      "A1 motor23"
+    ],
+    [
+      "ce7a15d2-4487-4548-a2de-f95659cf480e",
+      "USB to RS485 converter9"
+    ]
+  ],
+  "text_variables": {}
+}

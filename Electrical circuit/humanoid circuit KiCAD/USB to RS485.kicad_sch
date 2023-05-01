@@ -1,0 +1,27 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 9b376752-d2b7-4ec9-af0b-c9668ddc988d)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "B" (shape bidirectional) (at 101.6 54.61 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6000a809-6fd7-43f1-8c97-fa3f208eaf92)
+  )
+  (hierarchical_label "USB" (shape bidirectional) (at 101.6 69.85 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 79514eda-91fb-4562-870b-7ae4b0309758)
+  )
+  (hierarchical_label "A" (shape bidirectional) (at 101.6 48.26 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9e15b654-fbc4-4ee3-878a-7265a938e21d)
+  )
+  (hierarchical_label "GND" (shape bidirectional) (at 101.6 62.23 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid ef101e94-b969-4965-9644-63ee155f301e)
+  )
+)

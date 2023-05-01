@@ -1,0 +1,46 @@
+
+#YAML file has to be in the build folder, otherwise "Error loading configuration file: bad file:" appears
+# use this line to load it YAML::Node configuration = YAML::LoadFile("configuration.yml");
+torque_limit: 33.5      #in Nm
+temp_limit: 50          #in Celsius degrees
+
+refresh_frequency: 1000 #in Hz needed for the PID controller to calculate time delta
+
+#number of connected converters in the setup
+number_of_converters: 1 
+
+#each sub list represents joints connected to one converter
+#line IDs should go from the top to the bottom, which dictates the order of connecting converters
+#i.e. if torso is included in the setup, its converter should be connected first so that its converter has address 0
+#motor IDs in such configuration are going to increment from 0 to 2 from left to right
+#e.g. torso = 0, L_Shoulder_pitch = 0, L_Shoulder_yaw = 1
+#to alter the configuration comment out unconnected converters
+#commented out rows must correspond to the rows commented out in PID_gains and number_of_motors_per_line
+joint_names: [
+  ["torso"]
+#  ["L_Shoulder_pitch", "L_Shoulder_yaw", "L_Shoulder_roll"],
+#  ["L_Elbow", "L_Wrist_1", "L_Wrist_2"]
+#  ["L_Hip_pitch", "L_Hip_yaw", "L_Hip_roll"],
+#  ["L_knee", "L_ankle"]
+#  ["R_Hip_pitch", "R_Hip_yaw", "R_Hip_roll"],
+#  ["R_knee", "R_ankle"],
+#  ["R_Shoulder_pitch", "R_Shoulder_yaw", "R_Shoulder_roll"],
+#  ["R_Elbow", "R_Wrist_1", "R_Wrist_2"]
+]
+
+#PID gains are organised as the joint_names above
+#so that the first row corresponds to torso and second row corresponds to L_Shoulder group
+#the gains are organised as follows: [P gain, I gain, D gain]
+#to alter the configuration comment out raws corresponding to unconnected converter
+#commented out rows must correspond to the rows commented out in number_of_motors_per_line and joint_names
+PID_gains: [
+  [[1.44,0.00,0.04]]
+#  [[0.02,0,0], [0.03,0,0], [0.04,0,0]]
+#  [[0.1,0,0], [0.1,0,0], [0.1,0,0]],
+#  [[0.1,0,0], [0.1,0,0], [0.1,0,0]],
+#  [[1.44,0.0,0.04], [1.44,0.0,0.04]],
+#  [[0.1,0,0], [0.1,0,0]],
+#  [[0.1,0,0], [0.1,0,0], [0.1,0,0]],
+#  [[0.1,0,0], [0.1,0,0], [0.1,0,0]],
+#  [[0.1,0,0], [0.1,0,0], [0.1,0,0]]
+]

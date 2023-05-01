@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -march=native -Wall  -rdynamic CMakeFiles/changeID.dir/src/changeID.cpp.o  -o changeID   -L/home/laikago/catkin_humanoid/UnitreeMotorSDK_A1Go1_Sup220423/lib  -Wl,-rpath,/home/laikago/catkin_humanoid/UnitreeMotorSDK_A1Go1_Sup220423/lib -lunitreeMotorSDK_Linux64 

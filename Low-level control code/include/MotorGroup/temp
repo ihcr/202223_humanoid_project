@@ -1,0 +1,41 @@
+class MyObject {
+public:
+    MyObject(int id) {
+
+       id_ = id;
+    }
+
+    void PrintId() {
+        std::cout << "MyObject id: " << id_ << std::endl;
+    }
+
+private:
+    int id_;
+};
+
+class MyClass {
+public:
+    MyClass(int num_objects) {
+        num_objects_ = num_objects;
+        my_objects_ = new MyObject[num_objects_]; // Allocate memory for array of MyObject
+        for (int i = 0; i < num_objects_; i++) {
+            my_objects_[i] = MyObject(i); // Initialize each object in the array
+        }
+    }
+
+    ~MyClass() {
+        delete[] my_objects_; // Free memory allocated for array of MyObject
+    }
+
+    void PrintIds() {
+        for (int i = 0; i < num_objects_; i++) {
+            my_objects_[i].PrintId(); // Access each object in the array
+        }
+    }
+
+private:
+    int num_objects_;
+    MyObject* my_objects_;
+};
+
+/*const int IDs[]*/

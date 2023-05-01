@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -march=native -Wall  -rdynamic CMakeFiles/motor_control.dir/src/motor_control.cpp.o  -o motor_control   -L/home/laikago/catkin_humanoid/UnitreeMotorSDK_A1Go1_Sup220423/lib  -Wl,-rpath,/home/laikago/catkin_humanoid/UnitreeMotorSDK_A1Go1_Sup220423/lib:/usr/local/lib -lunitreeMotorSDK_Linux64 /usr/local/lib/libyaml-cpp.so.0.7.0 -lpthread 

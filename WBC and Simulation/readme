@@ -1,1 +1,23 @@
-readme
+How to run demosntrations for the humanoid robot design:
+
+Install all required libraries to run the WBC
+
+After opening a new terminal, enter the command '. install/setup.bash'
+
+If changing code other than yaml, urdf, or demo files, you must run 'colcon build' to implement the changes.
+
+
+
+For Demonstration: Picking up a box off a table:
+  
+  at the bottom of '/src/limbsim/python/limbsim/env.py', uncomment the section labelled as being for the table demonstration and comment the other sets of objects
+  
+  run 'python3 src/arm_ik_wbc/demos/humanoid_demo_table.py /configs/project_humanoid_robot.yaml'
+
+
+
+For Demonstration: Picking up a box off the floor:
+  
+  at the bottom of '/src/limbsim/python/limbsim/env.py', uncomment the section labelled as being for the floor demonstration and comment the other sets of objects
+  
+  run 'python3 src/arm_ik_wbc/demos/humanoid_demo_floor.py /configs/project_humanoid_robot.yaml'

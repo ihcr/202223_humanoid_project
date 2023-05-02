@@ -21,3 +21,9 @@ For Demonstration: Picking up a box off the floor:
   at the bottom of '/src/limbsim/python/limbsim/env.py', uncomment the section labelled as being for the floor demonstration and comment the other sets of objects
   
   run 'python3 src/arm_ik_wbc/demos/humanoid_demo_floor.py /configs/project_humanoid_robot.yaml'
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+The final URDF and meshes used in the demonstrations are found in /src/arm_ik_wbc/models/project_humanoid_robot
+The final .yaml file used in the demonstrations is found in /src/arm_ik_wbc/configs/project_humanoid_robot.yaml

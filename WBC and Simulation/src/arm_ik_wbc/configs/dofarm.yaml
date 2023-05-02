@@ -1,0 +1,31 @@
+################################################################################
+# robot configs
+################################################################################
+sim_robot_variables:
+  urdf_filename: "/models/dofarm/dofarm.urdf"
+  mesh_foldername: "/models/dofarm/dofarm"
+  use_fixed_base: True
+
+  base_name: "base_waist"
+  joint_names: [
+    "base_waist", "waist_shoulder", "shoulder_arm", "arm_forearm", "forearm_wrist", "wrist_wrist2", "wrist2_wrist3"
+  ]  # pinocchio order
+  limb_names: ["arm"]
+  limb_endeff_names: ["vx300s/ee_gripper_link"]
+  limb_endeff_joint_names: ["ee_gripper"]
+  limb_endeff_frame_names: ["ee_gripper"]
+
+  base_init_pos: [0., 0., 0., 0., 0., 0., 1.] # posture
+  base_init_vel: [0., 0., 0., 0., 0., 0.]
+  joint_init_pos: [0., 0., 0., 0., 0., 0., 0.]
+  joint_init_vel: [0., 0., 0., 0., 0., 0., 0.]
+
+
+################################################################################
+# control configs
+################################################################################
+control_variables:
+  joint_names: [
+    "base_waist", "waist_shoulder", "shoulder_arm", "arm_forearm", "forearm_wrist", "wrist_wrist2", "wrist2_wrist3"
+  ]  # pinocchio order
+  joint_des_pos: [0., 1.185, 1.57, 1.56, 0, -1.196, 1.57] #0., 0.1, 1.57, 1.57, 0, -0.1, 0.

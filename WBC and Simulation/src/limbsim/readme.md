@@ -1,0 +1,49 @@
+limbsim
+-------
+
+The code in this repo provides a pybullet simulation interface for all robots.
+
+### Dependency Installation
+
+You need [PyBullet](https://github.com/bulletphysics/bullet3) and to install this
+package.
+
+1. Install PyBullet:
+  pip3 install pybullet
+
+### Package Usage
+Replace `<work_folder>` with a specific workspace name, such as rob_ws.
+```
+mkdir -p <work_folder>/src
+cd <work_folder>/src
+git clone https://github.com/ihcr/commutils.git
+git clone https://github.com/ihcr/limbsim.git
+cd ..
+colcon build
+```
+Once the code has been compiled, you can source .bash file in `install/setup.bash`
+```
+. install/setup.bash
+```
+
+**Loading env in PyBullet**
+
+```
+import pybullet as p
+from limbsim.env import BulletEnvWithGround
+
+env = BulletEnvWithGround(p.GUI)
+```
+
+### Running demos
+```
+cd <work_folder>/
+python3 ./src/limbsim/demos/demo_robot_standing.py /configs/a1_standing.yaml
+python3 ./src/limbsim/demos/demo_robot_standing.py /configs/aliengo_standing.yaml
+python3 ./src/limbsim/demos/demo_aliengovx300_grasping.py /configs/aliengvx300_grasping.yaml
+```
+
+### License and Copyrights
+
+Copyright (c) 2021, University of Leeds and Harbin Institute of Technology.
+BSD 3-Clause License

@@ -1,0 +1,56 @@
+################################################################################
+# robot configs
+################################################################################
+sim_robot_variables:
+  urdf_filename: "/models/A1/A1.urdf"
+
+  use_fixed_base: False
+
+  base_name: "trunk"
+  joint_names: [
+    "FL_hip_joint", "FL_upper_joint", "FL_lower_joint", 
+    "FR_hip_joint", "FR_upper_joint", "FR_lower_joint", 
+    "RL_hip_joint", "RL_upper_joint", "RL_lower_joint", 
+    "RR_hip_joint", "RR_upper_joint", "RR_lower_joint", 
+  ]  # pinocchio order
+  limb_names: ["FL", "FR", "RL", "RR"]
+  limb_endeff_names: ["FL_toe", "FR_toe", "RL_toe", "RR_toe"]
+
+  base_init_pos: [0., 0., 0.32, 0., 0., 0., 1.] # posture
+  base_init_vel: [0., 0., 0., 0., 0., 0.]
+  joint_init_pos: [0., 0.75, -1.5, 
+                   0., 0.75, -1.5, 
+                   0., 0.75, -1.5, 
+                   0., 0.75, -1.5,]
+  joint_init_vel: [0., 0., 0., 
+                   0., 0., 0., 
+                   0., 0., 0., 
+                   0., 0., 0.,]
+
+
+################################################################################
+# control configs
+################################################################################
+control_variables:
+  joint_names: [
+    "FL_hip_joint", "FL_upper_joint", "FL_lower_joint", 
+    "FR_hip_joint", "FR_upper_joint", "FR_lower_joint", 
+    "RL_hip_joint", "RL_upper_joint", "RL_lower_joint", 
+    "RR_hip_joint", "RR_upper_joint", "RR_lower_joint", 
+  ]  # pinocchio order
+  joint_des_pos: [0., 0.75, -1.5, 
+                  0., 0.75, -1.5, 
+                  0., 0.75, -1.5, 
+                  0., 0.75, -1.5,]
+  joint_des_vel: [0., 0., 0., 
+                  0., 0., 0., 
+                  0., 0., 0., 
+                  0., 0., 0.,]
+  joint_kp: [50, 50, 50, 
+             50, 50, 50, 
+             50, 50, 50, 
+             50, 50, 50,]
+  joint_kd: [2, 2, 2, 
+             2, 2, 2, 
+             2, 2, 2, 
+             2, 2, 2,]

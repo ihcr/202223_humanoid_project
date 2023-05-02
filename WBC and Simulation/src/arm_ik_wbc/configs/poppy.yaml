@@ -1,0 +1,31 @@
+################################################################################
+# robot configs
+################################################################################
+sim_robot_variables:
+  urdf_filename: "/models/poppy/urdf/Poppy_Torso.urdf"
+  mesh_foldername: "/models/poppy/meshes"
+  use_fixed_base: True
+
+  base_name: "abs_z"
+  joint_names: [
+    "abs_z", "bust_y", "bust_x", "head_z", "head_y", "l_shoulder_y", "l_shoulder_x", "l_arm_z", "l_elbow_y", "r_shoulder_y", "r_shoulder_x", "r_arm_z", "r_elbow_y"  
+  ]  # pinocchio order
+  limb_names: ["head", "left_arm", "right_arm"]
+  limb_endeff_names: ["head", "l_hand", "r_forearm"]
+  limb_endeff_joint_names: ["head_y", "l_wrist", "r_arm_z"]
+  limb_endeff_frame_names: ["head_y", "l_wrist", "r_arm_z"]
+
+  base_init_pos: [0., 0., 0., 0., 0., 0., 1.] # posture
+  base_init_vel: [0., 0., 0., 0., 0., 0.]
+  joint_init_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+  joint_init_vel: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+
+
+################################################################################
+# control configs
+################################################################################
+control_variables:
+  joint_names: [
+    "abs_z", "bust_y", "bust_x", "head_z", "head_y", "l_shoulder_y", "l_shoulder_x", "l_arm_z", "l_elbow_y", "r_shoulder_y", "r_shoulder_x", "r_arm_z", "r_elbow_y"  
+  ]  # pinocchio order
+  joint_des_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]

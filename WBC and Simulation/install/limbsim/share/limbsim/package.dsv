@@ -1,0 +1,3 @@
+source;share/limbsim/hook/pythonpath.ps1
+source;share/limbsim/hook/pythonpath.dsv
+source;share/limbsim/hook/pythonpath.sh

@@ -1,0 +1,3 @@
+source;share/commutils/hook/pythonpath.ps1
+source;share/commutils/hook/pythonpath.dsv
+source;share/commutils/hook/pythonpath.sh

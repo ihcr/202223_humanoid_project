@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -Wpedantic -O3  -shared -Wl,-soname,libcsvutils.so -o libcsvutils.so CMakeFiles/csvutils.dir/src/csvutils/csv_writer.cpp.o  -Wl,-rpath,::::::::::::::::::::::::::::::::::::::::::: 

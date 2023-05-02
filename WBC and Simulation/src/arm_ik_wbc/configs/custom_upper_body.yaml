@@ -1,0 +1,30 @@
+################################################################################
+# robot configs
+################################################################################
+sim_robot_variables:
+  urdf_filename: "/models/custom/custom_upper_body.urdf"
+  mesh_foldername: "/models/poppy/meshes"
+  use_fixed_base: True
+
+  base_name: "base_to_r_shoulder_yaw"
+  joint_names: [
+    "base_to_l_shoulder_yaw", "l_shoulder_yaw_to_shoulder_roll", "l_shoulder_roll_to_shoulder_pitch", "l_upper_arm_to_elbow", "l_forearm_to_wrist_1", "l_wrist_1_to_wrist_2", "base_to_r_shoulder_yaw", "r_shoulder_yaw_to_shoulder_roll", "r_shoulder_roll_to_shoulder_pitch", "r_upper_arm_to_elbow", "r_forearm_to_wrist_1", "r_wrist_1_to_wrist_2"
+  ]  # pinocchio order
+  limb_names: ["left_arm", "right_arm"]
+  limb_endeff_names: ["l_hand", "r_hand"]
+  limb_endeff_joint_names: ["l_end_effector", "r_end_effector"]
+  limb_endeff_frame_names: ["l_end_effector", "r_end_effector"]
+
+  base_init_pos: [0., 0., 0., 0., 0., 0., 1.] # posture
+  base_init_vel: [0., 0., 0., 0., 0., 0.]
+  joint_init_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+  joint_init_vel: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+
+
+################################################################################
+# control configs
+################################################################################
+control_variables:
+  joint_names: ["base_to_l_shoulder_yaw", "l_shoulder_yaw_to_shoulder_roll", "l_shoulder_roll_to_shoulder_pitch", "l_upper_arm_to_elbow", "l_forearm_to_wrist_1", "l_wrist_1_to_wrist_2", "base_to_r_shoulder_yaw", "r_shoulder_yaw_to_shoulder_roll", "r_shoulder_roll_to_shoulder_pitch", "r_upper_arm_to_elbow", "r_forearm_to_wrist_1", "r_wrist_1_to_wrist_2"
+  ]  # pinocchio order
+  joint_des_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]

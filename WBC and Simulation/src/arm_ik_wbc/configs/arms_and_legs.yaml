@@ -1,0 +1,31 @@
+################################################################################
+# robot configs
+################################################################################
+sim_robot_variables:
+  urdf_filename: "/models/custom/arms_and_legs.urdf"
+  mesh_foldername: "/models/poppy/meshes"
+  use_fixed_base: True
+
+  base_name: "l_lower_leg_to_ankle"
+  joint_names: [
+    "base_to_l_shoulder_yaw", "l_shoulder_yaw_to_shoulder_roll", "l_shoulder_roll_to_shoulder_pitch", "l_upper_arm_to_elbow", "l_forearm_to_wrist_1", "l_wrist_1_to_wrist_2", "base_to_r_shoulder_yaw", "r_shoulder_yaw_to_shoulder_roll", "r_shoulder_roll_to_shoulder_pitch", "r_upper_arm_to_elbow", "r_forearm_to_wrist_1", "r_wrist_1_to_wrist_2",  "z_base_to_l_hip_yaw", "l_hip_yaw_to_pitch", "l_hip_pitch_to_roll", "l_upper_leg_to_knee", "l_lower_leg_to_ankle", "z_base_to_r_hip_yaw", "r_hip_yaw_to_pitch", "r_hip_pitch_to_roll", "r_upper_leg_to_knee", "r_lower_leg_to_ankle"
+  ]  # pinocchio order
+  limb_names: ["left_arm", "right_arm", "left_leg", "right_leg"]
+  limb_endeff_names: ["l_hand", "r_hand", "l_foot", "r_foot"]
+  limb_endeff_joint_names: ["l_end_effector", "r_end_effector", "l_foot_end_effector", "r_foot_end_effector"]
+  limb_endeff_frame_names: ["l_end_effector", "r_end_effector", "l_foot_end_effector", "r_foot_end_effector"]
+
+  base_init_pos: [0., 0., 1., 0., 0., 0., 1.] # posture
+  base_init_vel: [0., 0., 0., 0., 0., 0.]
+  joint_init_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+  joint_init_vel: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
+
+
+################################################################################
+# control configs
+################################################################################
+control_variables:
+  joint_names: [
+    "base_to_l_shoulder_yaw", "l_shoulder_yaw_to_shoulder_roll", "l_shoulder_roll_to_shoulder_pitch", "l_upper_arm_to_elbow", "l_forearm_to_wrist_1", "l_wrist_1_to_wrist_2", "base_to_r_shoulder_yaw", "r_shoulder_yaw_to_shoulder_roll", "r_shoulder_roll_to_shoulder_pitch", "r_upper_arm_to_elbow", "r_forearm_to_wrist_1", "r_wrist_1_to_wrist_2",  "z_base_to_l_hip_yaw", "l_hip_yaw_to_pitch", "l_hip_pitch_to_roll", "l_upper_leg_to_knee", "l_lower_leg_to_ankle", "z_base_to_r_hip_yaw", "r_hip_yaw_to_pitch", "r_hip_pitch_to_roll", "r_upper_leg_to_knee", "r_lower_leg_to_ankle"
+  ]  # pinocchio order
+  joint_des_pos: [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]

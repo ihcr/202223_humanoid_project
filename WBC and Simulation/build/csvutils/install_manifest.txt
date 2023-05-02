@@ -1,0 +1,6 @@
+/home/will/humanoid_ws/install/csvutils/lib/libcsvutils.so
+/home/will/humanoid_ws/install/csvutils/include/csvutils/csv_writer.hpp
+/home/will/humanoid_ws/install/csvutils/share/csvutils/cmake/csvutilsConfig.cmake
+/home/will/humanoid_ws/install/csvutils/share/csvutils/cmake/csvutilsConfigVersion.cmake
+/home/will/humanoid_ws/install/csvutils/share/csvutils/cmake/csvutilsTargets.cmake
+/home/will/humanoid_ws/install/csvutils/share/csvutils/cmake/csvutilsTargets-noconfig.cmake
